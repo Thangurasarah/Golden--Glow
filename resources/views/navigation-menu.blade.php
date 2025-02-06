@@ -13,7 +13,7 @@
 
     </head>
     <body>
-    <header class=" shadow-md py-4 header-bg h-24" >
+    <header class="fixed top-0 left-0 w-full shadow-md py-4 header-bg h-20 z-20">
     <div class="container mx-auto flex justify-between items-center px-6">
         <!-- Logo -->
         <a href="{{ url('/') }}" class="text-2xl font-bold text-white">
