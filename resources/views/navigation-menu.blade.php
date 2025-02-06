@@ -6,6 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('Custom.css') }}">
+
         <title>Welcome</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -26,6 +27,13 @@
             <a href="{{ url('/about') }}" class="text-white hover:text-pink-500 transition">LIPS</a>
             <a href="{{ url('/contact') }}" class="text-white hover:text-pink-500 transition">EYES</a>
         </nav>
+
+             <!-- Login & sign up -->
+             <div class=" flex items- center space-x-8">
+                <a href="{{ url('/login') }}" class="text-white hover:text-pink-500 transition">Login</a>
+            <a href="{{ url('/register') }}" class="text-white hover:text-pink-500 transition">Sign Up</a>
+
+             </div>
 
         <!-- Shopping Cart & Mobile Menu -->
         <div class="flex items-center space-x-4">

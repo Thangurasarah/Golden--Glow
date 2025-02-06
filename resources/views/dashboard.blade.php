@@ -11,9 +11,10 @@
 
 
 <body class="bg-white">
-    <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://source.unsplash.com/1600x900/?beauty,makeup')">
-        <div class="absolute inset-0 bg-white bg-opacity-50 flex items-center justify-center">
+    <section class="relative bg-no-repeat  bg-cover bg-right h-screen" style="background-image: url('{{ asset('beauty.jpg') }}'); height: 50vh;">
+        <div class="absolute inset-0  flex items-center justify-center">
             <div class="text-center text-black px-6">
+            
                 <h2 class="text-5xl font-bold mb-4">Radiate Confidence with Golden Glow</h2>
                 <p class="text-lg mb-6">Discover beauty products that enhance your natural glow.</p>
                 <a href="#" class="bg-brown-600 Custom-text py-3 px-6 rounded-lg text-lg">Shop Now</a>
