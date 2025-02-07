@@ -16,6 +16,19 @@
 
 <body>
     <header class="fixed top-0 left-0 w-full shadow-md py-4 header-bg h-20 z-20">
+<<<<<<< HEAD
+=======
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <!-- Logo -->
+        <a href="{{ url('/') }}" class="text-2xl font-bold text-white">
+           GOLDEN GLOW
+    <header class=" shadow-md py-4" style='background-color:rgb(104, 64, 64)'>
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <!-- Logo -->
+        <a href="{{ url('/') }}" class="text-2xl font-bold text-white">
+           GOLDEN GLOW
+        </a>
+>>>>>>> b7ec190b8242a089fa0a161c3c6434ef7b93077e
 
         <div class="container mx-auto flex justify-between items-center px-6">
             <!-- Logo -->
@@ -45,6 +58,7 @@
 
                     </div>
 
+<<<<<<< HEAD
                     <!-- Shopping Cart & Mobile Menu -->
                     <div class="flex items-center space-x-4">
                         <a href="{{ url('/cart') }}" class="relative">
@@ -55,6 +69,28 @@
                                 <circle cx="10" cy="21" r="1" />
                                 <circle cx="17" cy="21" r="1" />
                             </svg>
+=======
+        </nav>
+
+        <!-- Shopping Cart & Mobile Menu -->
+        <div class="flex items-center space-x-4">
+            <a href="{{ url('/cart') }}" class="relative">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:text-pink-500 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 3h2l3.6 7.59M7 16h12l3-8H6" />
+                    <circle cx="10" cy="21" r="1" />
+                    <circle cx="17" cy="21" r="1" />
+                </svg>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white hover:text-pink-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+>>>>>>> b7ec190b8242a089fa0a161c3c6434ef7b93077e
 
                         </a>
 
