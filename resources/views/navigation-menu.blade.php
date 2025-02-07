@@ -18,6 +18,11 @@
         <!-- Logo -->
         <a href="{{ url('/') }}" class="text-2xl font-bold text-white">
            GOLDEN GLOW
+    <header class=" shadow-md py-4" style='background-color:rgb(104, 64, 64)'>
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <!-- Logo -->
+        <a href="{{ url('/') }}" class="text-2xl font-bold text-white">
+           GOLDEN GLOW
         </a>
 
         <!-- Navigation Links -->
@@ -35,6 +40,18 @@
             <a href="{{ url('/register') }}" class="text-white hover:text-pink-500 transition">Sign Up</a>
 
              </div>
+
+        <!-- Shopping Cart & Mobile Menu -->
+        <div class="flex items-center space-x-4">
+            <a href="{{ url('/cart') }}" class="relative">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:text-pink-500 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 3h2l3.6 7.59M7 16h12l3-8H6" />
+                    <circle cx="10" cy="21" r="1" />
+                    <circle cx="17" cy="21" r="1" />
+                </svg>
+            </a>
+
+        </nav>
 
         <!-- Shopping Cart & Mobile Menu -->
         <div class="flex items-center space-x-4">
