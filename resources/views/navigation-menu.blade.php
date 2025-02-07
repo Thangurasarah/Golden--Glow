@@ -17,7 +17,7 @@
     <div class="container mx-auto flex justify-between items-center px-6">
         <!-- Logo -->
         <a href="{{ url('/') }}" class="text-2xl font-bold text-white">
-           GOLDEN GLOW 
+           GOLDEN GLOW
         </a>
 
         <!-- Navigation Links -->
@@ -26,10 +26,11 @@
             <a href="{{ url('/shop') }}" class="text-white hover:text-pink-500 transition">FACE</a>
             <a href="{{ url('/about') }}" class="text-white hover:text-pink-500 transition">LIPS</a>
             <a href="{{ url('/contact') }}" class="text-white hover:text-pink-500 transition">EYES</a>
+            <a href="{{ url('/contact') }}" class="text-white hover:text-pink-500 transition">ACCESSORIES</a>
         </nav>
 
              <!-- Login & sign up -->
-             <div class=" flex items- center space-x-8">
+             <div class=" flex items- center space-x-4">
                 <a href="{{ url('/login') }}" class="text-white hover:text-pink-500 transition">Login</a>
             <a href="{{ url('/register') }}" class="text-white hover:text-pink-500 transition">Sign Up</a>
 
