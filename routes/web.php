@@ -14,4 +14,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/cart', function () {
+        return view('cart');
+    })->name('cart');
 });
