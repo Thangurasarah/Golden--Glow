@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Shop</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+   <script src="{{ asset('js/app.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('Custom.css') }}">
+</head>
+    
 
-
-
-@include('navigation-menu')
 
 
 <body class="pt-20">
+@vite(['resources/js/app.js'])
+
+@include('navigation-menu')
+
     <!-- Hero Section -->
     <section class="relative section-bg bg-no-repeat bg-right md:bg-[length:50%_auto] sm:bg-none"
     style="background-image: url('{{ asset('beauty.jpg') }}'); height: 50vh;">
@@ -68,50 +71,15 @@
                 <h3 class="text-xl font-semibold mt-4">Luxury Lipstick</h3>
                 <p class="text-gray-600">A long-lasting, hydrating lipstick.</p>
                 <p class="font-bold text-brown-600 mt-2">$19.99</p>
-                <button class="text-center flex justify-center text-white py-2 px-4 rounded-lg mt-4 rounded-full header-bg"
+                <button onclick="addToCart()" class="text-center flex justify-center text-white py-2 px-4 rounded-lg mt-4 rounded-full header-bg add-to-cart"
                  data-name="Luxury Lipstick"
-                data-price="19.99">Add to Cart</button>
+                data-price="19.99">
+                Add to Cart
+            </button>
+           
+
         
-            <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Initialize an empty cart array from localStorage or create a new one
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
- 
-        function addToCart(event) {
-            let button = event.target; // Get the clicked button
-            let productName = button.getAttribute("data-name");
-            let productPrice = parseFloat(button.getAttribute("data-price"));
-
-            if (!productName || isNaN(productPrice)) {
-                alert("Error: Product data is missing or incorrect!");
-                return;
-            }
-
-            // Create product object
-            let product = { name: productName, price: productPrice, quantity: 1 };
-
-            // Check if product already exists in cart
-            let existingProduct = cart.find(item => item.name === productName);
-            if (existingProduct) {
-                existingProduct.quantity += 1;
-            } else {
-                cart.push(product);
-            }
-
-            // Save updated cart to localStorage
-            localStorage.setItem('cart', JSON.stringify(cart));
-
-            // Redirect user to cart page after adding item
-            window.location.href = "/cart"; // Change this to your actual cart page URL
-        }
-
-        // Attach event listeners to all "Add to Cart" buttons
-        document.querySelectorAll(".add-to-cart").forEach(button => {
-            button.addEventListener("click", addToCart);
-        });
-    });
-</script>
 </div>
 <div class="bg-white shadow-md p-4 rounded-lg">
 <img src="{{ asset('Lips/Lipstick8.jpg') }}" alt="Product" class="w-full rounded-lg height:40vh">
@@ -129,7 +97,7 @@
 
     <!-- Footer -->
      
-  
+ 
 
 </body>
 </html>
