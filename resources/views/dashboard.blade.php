@@ -58,7 +58,7 @@
                             <h3 class="text-xl font-semibold mt-4">${product.name}</h3>
                             <p class="text-gray-600">A high-quality, long-lasting product.</p>
                             <p class="font-bold text-brown-600 mt-2">$${product.price.toFixed(2)}</p>
-                            <button class="button-bg  text-white py-2 px-4 rounded-lg mt-4 add-to-cart"
+                            <button class="button-bg  text-white py-2 px-4 rounded-lg mt-4 add-to-cart block mx-auto"
                                 data-name="${product.name}"
                                 data-price="${product.price}"
                                 data-image="${product.image}">

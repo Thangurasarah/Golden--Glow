@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body class="bg-gray-100">
+    
+
     <div class="container mx-auto mt-10">
         <h1 class="text-3xl font-bold text-center">Your Cart</h1>
 
@@ -103,7 +105,7 @@
                 }
                 alert("Proceeding to checkout...");
                 // Redirect to checkout page (replace with actual checkout logic)
-                window.location.href = "checkout.html";
+                window.location.href = "checkout";
             };
 
             updateCart();
