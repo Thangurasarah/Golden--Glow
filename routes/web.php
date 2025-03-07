@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\MpesaController;
 
 Route::get('/', function () {
     return view('dashboard');
@@ -22,5 +23,8 @@ Route::middleware([
 
     // Checkout routes
     Route::get('/checkout', [CheckoutController::class, 'checkout'])->name('checkout');
-    Route::post('/checkout', [CheckoutController::class, 'processCheckout'])->name('checkout.process');
+    Route::post('/checkoutProcess', [CheckoutController::class, 'processCheckout'])->name('checkout.process');
+
+    Route::post('/mpesa/stkpush', [MpesaController::class, 'stkPush'])->name('mpesa.stkpush');
+    Route::post('/mpesa/callback', [MpesaController::class, 'mpesaCallback'])->name('mpesa.callback');
 });
